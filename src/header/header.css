@@ -1,0 +1,134 @@
+.header {
+  background-color: #fff;
+  padding: 10px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.logopage {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.logopage h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #000;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin: 0 5px;
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.language-selector select {
+  border: none;
+  background: none;
+  font-size: 16px;
+  color: #000;
+  margin-left: 10px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.nav-links a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+}
+
+.discover-section {
+  text-align: center;
+  padding: 30px 20px;
+  background-color: #f8f8f8;
+}
+
+.discover-section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.discover-section p {
+  font-size: 14px;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .top-section {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .menu-toggle img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .logopage {
+    margin-left: 10px;
+  }
+
+  .icons {
+    display: none;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links a {
+    margin: 10px 0;
+  }
+
+  .discover-section {
+    padding: 20px;
+  }
+}
